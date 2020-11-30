@@ -1,0 +1,65 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "Pregunta";
+    Layout = "_Layout";
+}
+
+<div class="container text-center p-2 mb-4">
+  <span class="border-bottom border-dark text-dark h1">
+    FORMULARIO DE PREGUNTA
+  </span>
+</div>
+<div class="container h3">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="comment">Pregunta:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+    </div>
+    <div class="col-md-6 justify-content-center">
+      <div class="row mt-5">
+        <select
+          id="carrera"
+          name="tituloCarrera"
+          class="form-control custom-select bg-white border-md"
+        >
+          <option value="">Escoja su Carrera</option>
+          <option value="">Ingenieria de Sistemas</option>
+          <option value="">Ingenieria Industrial</option>
+          <option value="">Ingenieria Civil</option>
+          <option value="">Comunicacion</option>
+        </select>
+      </div>
+      <div class="row mt-4">
+        <select
+          id="tema"
+          name="tipoTema"
+          class="form-control custom-select bg-white border-md"
+        >
+          <option value="">Escoja su Tema</option>
+          <option value="">CCNA</option>
+          <option value="">Base de Datos</option>
+          <option value="">Algoritmia</option>
+          <option value="">Diseño Web</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <div class="checkbox text-dark h3">
+        <label>
+          <input type="checkbox" value="" /> Notificar cada
+          respuesta</label
+        >
+      </div>
+      <button type="submit" class="btn btn-lg btn-danger">
+        Enviar Pregunta
+      </button>
+    </div>
+  </div>
+</div>
