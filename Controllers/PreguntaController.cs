@@ -9,5 +9,15 @@ namespace OfPandaStack.Controllers
         {
             return View();
         }
+
+        public IActionResult Populares()
+        {
+            return View();
+        }
+
+        public IActionResult SinResp()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,53 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "Populares";
+    Layout = "_Layout";
+}
+
+<div class="container text-center p-2 mb-4">
+  <span class="border-bottom border-dark text-dark h1">
+    Populares
+  </span>
+</div>
+<!--Pregunta hecha-->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="card-title">Question Title</h2>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+        <a href="#" class="btn btn-primary">Responder &rarr;</a>
+      </div>
+      <div class="card-footer text-muted">
+        <a href="#">
+          <i class="fa fa-thumbs-up" aria-hidden="true"> 64</i>
+        </a>
+        <a href="#">
+          <i class="fa fa-thumbs-down" aria-hidden="true">1</i>
+        </a>
+        Posted on January 1, 2020 by
+        <a href="#">Adolfex</a>
+      </div>
+
+      <!--Respuestas-->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">          
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Usuario</a>
+            </h4>            
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">
+              <a href="#">
+                <i class="fa fa-thumbs-up" aria-hidden="true"> 64</i>
+              </a>
+              <a href="#">
+                <i class="fa fa-thumbs-down" aria-hidden="true">1</i>
+              </a>
+              Posted on January 1, 2020
+            </small>
+          </div>
+        </div>
+      </div>      
+    </div>
